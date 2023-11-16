@@ -1,0 +1,251 @@
+#root {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/****Home****/
+
+.Container {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+
+/****Section****/
+
+.Wrap {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.ItemText {
+  padding-top: 15vh;
+  text-align: center;
+}
+
+.ButtonGroup {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.LeftButton,
+.RightButton {
+  background-color: rgba(23, 26, 32, 0.8);
+  height: 40px;
+  width: 256px;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  border: none;
+  opacity: 0.85;
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+  margin: 8px;
+}
+
+.RightButton {
+  background-color: white;
+  opacity: 0.65;
+  color: black;
+}
+
+.DownArrow {
+  margin-top: 20px;
+  height: 40px;
+  animation: animateDown infinite 1.5s;
+  overflow-x: hidden;
+}
+
+@keyframes animateDown {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(5px);
+  }
+  60% {
+    transform: translateY(3px);
+  }
+}
+
+@media (max-width: 768px) {
+  .ButtonGroup {
+    flex-direction: column;
+  }
+}
+
+/****FirstSection****/
+
+.BackVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .BackVideo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .BackVideo {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.TextColor {
+  color: white;
+}
+
+.OtherColor {
+  color: black;
+}
+
+/****NAV****/
+
+.nav-container {
+  min-height: 60px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu > ul > li {
+  margin: 0 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  flex-wrap: nowrap;
+  font-size: small;
+}
+
+.rightMenu > a {
+  font-weight: 600;
+  padding: 0 5px;
+  text-transform: uppercase;
+  font-size: x-large;
+}
+
+.Icon :hover {
+  background-color: rgba(236, 241, 246, 0.5);
+  padding: 1px 1px 0px 1px;
+  border-radius: 5px;
+}
+
+.menuItem {
+  font-size: x-large;
+  cursor: pointer;
+}
+
+.menuItem:hover {
+  background-color: rgba(236, 241, 246, 0.5);
+  padding: 1px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .rightMenu {
+    display: none;
+  }
+}
+
+.BurgerNav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 9;
+  background-color: white;
+  overflow-y: auto;
+}
+
+.BurgerNav > ul > li {
+  font-weight: 600;
+  text-align: left;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.BurgerNav > ul > li:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.BurgerNav > ul {
+  padding-top: 40px;
+}
+
+.closeIcon {
+  font-size: xx-large;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 53px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.Account {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.Account > span {
+  font-size: x-large;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.menuItem {
+  font-size: medium;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 2px 4px;
+  border: none;
+  border-radius: 2px;
+}
+
+@media (min-width: 768px) {
+  .menuItem {
+    display: none;
+  }
+}
