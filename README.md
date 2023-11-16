@@ -1,4 +1,4 @@
-`# Tesla Clone
+# Tesla Clone
 
 This repository contains a clone of the Tesla website, built using React. The project aims to replicate the Tesla homepage with a focus on responsive design and interactivity. It is a demonstration of front-end web development skills and a showcase of React.js capabilities.
 
