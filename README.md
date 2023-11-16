@@ -1,6 +1,6 @@
 # Tesla Clone
 
-This repository contains a clone of the Tesla website, built using React. The project aims to replicate the Tesla homepage with a focus on responsive design and interactivity. It is a demonstration of front-end web development skills and a showcase of React.js capabilities.
+This repository contains a clone of the Tesla website, built using React and Redux. The project aims to replicate the Tesla homepage with a focus on responsive design and interactivity. It is a demonstration of front-end web development skills and a showcase of React.js and Redux capabilities.
 
 ## Live Demo
 
@@ -11,6 +11,8 @@ Check out the live demo [here](https://astounding-smakager-596c16.netlify.app).
 - **Responsive Design:** The Tesla Clone is designed to work seamlessly on various devices, including desktops, tablets, and mobile phones.
 
 - **React Components:** The project is structured using React components to enhance modularity and maintainability.
+
+- **Redux State Management:** Utilizes Redux for state management, ensuring a centralized and predictable state for the application.
 
 - **Real-time Updates:** The clone features real-time updates to mimic the dynamic content changes on the official Tesla website.
 
