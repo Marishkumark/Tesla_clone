@@ -74,8 +74,7 @@ If you encounter any issues or have suggestions for improvements, please [open a
 License
 -------
 
-This project is licensed under the MIT License - see the [LICENSE](https://chat.openai.com/c/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Marishkumark/License/blob/main/README.md) file for details.
 
 * * * * *
 
-Feel free to explore the code and contribute to the project! If you have any questions or concerns, don't hesitate to reach out. Happy coding!
